@@ -2,11 +2,7 @@
 layout: default
 title: "fran-byte 42 Madrid"
 ---
-# 🚀 Portal 42
-
-- [Intranet 42](https://intra.42.fr)
-
-## Proyectos y Recursos 💻
+# 🚀 Projects and Required Resources 💻
 
 | Proyecto         | Recursos necesarios                          |
 |------------------|---------------------------------------------|
