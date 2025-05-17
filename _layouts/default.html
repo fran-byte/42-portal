@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: "42 Madrid" }}</title>
+  
+  <!-- CSS del tema Midnight (conserva el estilo oscuro) -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  
+  <!-- Opcional: CSS personalizado -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+<body>
+  <div class="wrapper">
+    <section>
+      <!-- Título personalizado (opcional) -->
+      <div id="title">
+        <h1>{{ page.title | default: "Mis Proyectos 42" }}</h1>
+        <hr>
+      </div>
+
+      {{ content }} <!-- Tu markdown se inyecta aquí -->
+
+      <!-- Footer personalizado (opcional) -->
+      <div class="credits">
+        <p>Código con ❤️ en 42 Madrid</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
