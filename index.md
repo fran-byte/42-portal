@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: "42 Madrid"
 ---
 # 🚀 Mis Proyectos 42
