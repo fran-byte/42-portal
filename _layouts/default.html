@@ -2,31 +2,52 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: "42 Madrid" }}</title>
   
-  <!-- CSS del tema Midnight (conserva el estilo oscuro) -->
+  <!-- SEO y estilos originales -->
+  {% seo %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   
-  <!-- Opcional: CSS personalizado -->
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <!-- CSS personalizado -->
+  <style>
+    /* Elimina el footer de créditos */
+    .credits.left, .credits.right { display: none !important; }
+    /* Opcional: ajusta el header */
+    #header { background: rgba(0,0,0,0.7); }
+  </style>
 </head>
 <body>
   <div class="wrapper">
+    <!-- Header modificado (sin "View on GitHub") -->
+    <div id="header">
+      <nav>
+        <ul>
+          <!-- Menú personalizado -->
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <section>
-      <!-- Título personalizado (opcional) -->
+      <!-- Título principal -->
       <div id="title">
-        <h1>{{ page.title | default: "Mis Proyectos 42" }}</h1>
+        <h1>{{ page.title | default: "42 Madrid" }}</h1>
+        <p>{{ page.description | default: "Mis proyectos de la escuela" }}</p>
         <hr>
       </div>
 
-      {{ content }} <!-- Tu markdown se inyecta aquí -->
+      {{ content }} <!-- Tu contenido Markdown aquí -->
 
-      <!-- Footer personalizado (opcional) -->
-      <div class="credits">
-        <p>Código con ❤️ en 42 Madrid</p>
+      <!-- Footer personalizado -->
+      <div class="credits center">
+        <p>Desarrollado en <strong>42 Madrid</strong> | 2024</p>
       </div>
     </section>
   </div>
+
+  <!-- Scripts esenciales -->
+  <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 </body>
 </html>
