@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Bienvenido"
+title: "42 Madrid"
 ---
 # 🚀 Mis Proyectos 42
 
