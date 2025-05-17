@@ -2,7 +2,7 @@
 layout: home
 title: "42 Madrid"
 ---
-# 🚀 Mis Proyectos 42
+# 🚀 Portal 42
 
 ## 📚 Recursos útiles
 - [Normas de 42](https://normas.42.fr)
