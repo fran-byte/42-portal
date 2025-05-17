@@ -9,11 +9,13 @@ title: "42 Madrid"
 ## 📚 Recursos útiles
 - [Normas de 42](https://normas.42.fr)
 
-
 ## 💻 Lista de proyectos
-### C
-- [Libft](https://github.com/tuusuario/libft): Mi primera librería en C.
-- [Born2beroot](https://github.com/tuusuario/born2beroot): Configuración de servidor.
 
-### Python
-- [Piscine Python](https://github.com/tuusuario/piscine-python): Ejercicios de Python.
+| Proyecto         | Recursos necesarios                          |
+|------------------|---------------------------------------------|
+| **Libft**        | - [Enunciado](link_enunciado)               |
+|                  | - [Tutorial](link_tutorial)                 |
+| **Born2beroot**  | - [Guía de instalación](link_guia)          |
+|                  | - [Comandos útiles](link_comandos)          |
+| **Piscine Python**| - [Ejercicios resueltos](link_ejercicios)   |
+|                  | - [Cheatsheet Python](link_cheatsheet)      |
