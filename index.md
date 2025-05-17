@@ -1,6 +1,7 @@
 ---
 layout: home
 title: "Bienvenido"
+remote_theme: pages-themes/slate@v0.2.0
 ---
 # 🚀 Mis Proyectos 42
 
