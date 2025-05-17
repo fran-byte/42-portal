@@ -6,7 +6,7 @@ title: "fran-byte 42 Madrid"
 
 - [Intranet 42](https://intra.42.fr)
 
-## 💻 Proyectos y Recursos
+## Proyectos y Recursos 💻
 
 | Proyecto         | Recursos necesarios                          |
 |------------------|---------------------------------------------|
