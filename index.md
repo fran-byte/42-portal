@@ -4,9 +4,11 @@ title: "42 Madrid"
 ---
 # 🚀 Portal 42
 
+- [Intranet 42](https://intra.42.fr)
+
 ## 📚 Recursos útiles
 - [Normas de 42](https://normas.42.fr)
-- [Intranet 42](https://intra.42.fr)
+
 
 ## 💻 Lista de proyectos
 ### C
