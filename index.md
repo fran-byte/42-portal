@@ -4,18 +4,14 @@ title: "42 Madrid"
 ---
 # 🚀 Portal 42
 
+## 📚 Recursos generales
 - [Intranet 42](https://intra.42.fr)
+- [Normas](https://normas.42.fr)
 
-## 📚 Recursos útiles
-- [Normas de 42](https://normas.42.fr)
-
-## 💻 Lista de proyectos
+## 💻 Proyectos
 
 | Proyecto         | Recursos necesarios                          |
 |------------------|---------------------------------------------|
-| **Libft**        | - [Enunciado](link_enunciado)               |
-|                  | - [Tutorial](link_tutorial)                 |
-| **Born2beroot**  | - [Guía de instalación](link_guia)          |
-|                  | - [Comandos útiles](link_comandos)          |
-| **Piscine Python**| - [Ejercicios resueltos](link_ejercicios)   |
-|                  | - [Cheatsheet Python](link_cheatsheet)      |
+| **[Libft](https://github.com/fran-byte/libft)** | • [Enunciado oficial](link1)<br>• [Mi guía rápida](link2) |
+| **[Born2beroot](https://github.com/fran-byte/born2beroot)** | • [Instalación Debian](link3)<br>• [Comandos SSH](link4) |
+| **[Piscine Python](https://github.com/fran-byte/piscine-python)** | • [Ejercicios clave](link5)<br>• [Cheatsheet](link6) |
