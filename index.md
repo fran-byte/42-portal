@@ -10,6 +10,6 @@ title: "fran-byte 42 Madrid"
 
 | Proyecto         | Recursos necesarios                          |
 |------------------|---------------------------------------------|
-| **[Libft](https://github.com/fran-byte/libft)** | • [Enunciado oficial](link1)<br>• [Mi guía rápida](link2) |
+| **[Libft](https://github.com/fran-byte/libft)** |  [42 funciones](link2) |
 | **[Born2beroot](https://github.com/fran-byte/born2beroot)** | • [Instalación Debian](link3)<br>• [Comandos SSH](link4) |
 
