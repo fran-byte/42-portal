@@ -2,7 +2,7 @@
 layout: default
 title: "fran-byte 42 Madrid"
 ---
-# 🚀 Projects and Required Resources 💻
+# 🚀 Milestone 0-1 Projects 💻
 
 | Milestone | Project Repo         | Required Resources                          |
 |------------------|------------------|---------------------------------------------|
@@ -11,3 +11,12 @@ title: "fran-byte 42 Madrid"
 | 1 | **[get_next_line](https://github.com/fran-byte/born2beroot)** | • [gnl_es](projects/gnl_es.md)<br> • [gnl_en](projects/gnl_en.md) <br> • [Small Tester](https://github.com/fran-byte/42-gnl-tester)|
 | 1 | **[ft_printf](https://github.com/fran-byte/born2beroot)** | • [ft_printf_es](projects/ft_printf_es.md)<br> • [ft_printf_en](projects/ft_printf_en.md) <br> • [Small Tester](https://github.com/fran-byte/42-ft_printf-tester)|
 
+---
+
+# 🎯 Milestone 2 Projects 💻
+
+| Milestone | Project Repo         | Required Resources                          |
+|------------------|------------------|---------------------------------------------|
+| 2 | **[push_swap](https://github.com/fran-byte/born2beroot)** | • [push_swap_es](projects/push_swap_es.md)<br> • [Resources_en](projects/push_swap_en.md) |
+| 2 | **[pipex](https://github.com/fran-byte/born2beroot)** | • [gnl_es](projects/pipex_es.md)<br> • [pipex_en](projects/pipex_en.md) <br> • [Small Tester](https://github.com/fran-byte/42-pipex-tester)|
+| 2 | **[so_long](https://github.com/fran-byte/born2beroot)** | • [so_long_es](projects/so_long_es.md)<br> • [ft_printf_en](projects/so_long_en.md) |
