@@ -98,8 +98,6 @@ Se logra configurando:
 
 * `ssh` debe estar activo y funcionando.
 
-¡Perfecto! Aquí tienes todos los comandos útiles para **Born2beroot con SSH y gestión de servicios**, puestos en un bloque de código con comentarios explicativos a la derecha de cada línea:
-
 ---
 
 ### 🧩 Comandos útiles (SSH, servicios, seguridad)
