@@ -3,7 +3,11 @@ layout: default
 title: "fran-byte 42 Madrid"
 ---
 
-<img src="https://avatars.githubusercontent.com/u/14311476?v=4" alt="Foto de perfil" width="150"/>
+<img src="https://avatars.githubusercontent.com/u/14311476?v=4" 
+     alt="Foto de perfil" 
+     width="150" 
+     style="border-radius: 50%; border: 2px solid #fff;" />
+
 
 
 ## About Me
