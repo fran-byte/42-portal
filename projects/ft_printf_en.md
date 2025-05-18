@@ -23,7 +23,11 @@ write(1, &c, 1);  // prints a single character
 
 #### ✅ `va_list` (Variadic Functions)
 
-To handle variable arguments (`...`), you need:
+Here is the full English translation of the paragraph you provided:
+
+---
+
+To handle variable arguments (`...`), we need to use macros from the `<stdarg.h>` header:
 
 ```c
 #include <stdarg.h>
@@ -33,6 +37,12 @@ va_start(args, format);
 ... // va_arg(args, type)
 va_end(args);
 ```
+
+* **`va_list`**: Declares a variable that holds information about the additional arguments.
+* **`va_start`**: Initializes the `va_list` variable with the variable arguments.
+* **`va_arg`**: Used to retrieve each argument from the list.
+* **`va_end`**: Cleans up the list once all arguments have been processed.
+
 
 ---
 
