@@ -15,12 +15,17 @@ To have **all the technical and conceptual tools** you need to start Libft **wit
 
 #### ✅ What does it mean to compile?
 
-It's the process of transforming your `.c` source code into **executable machine code**. The most commonly used compiler at 42 is `gcc`.
+It's the process of transforming your `.c` source code into **executable machine code**. The most commonly used compiler at 42 is `cc`.
 
-#### 🔧 What is `gcc` and how do you use it?
+#### 🔧 What is `cc` and how do you use it?
 
 ```bash
 gcc -Wall -Wextra -Werror file.c -o executable
+
+# Or we can use gcc if our project allows it:
+
+gcc -Wall -Wextra -Werror file.c -o executable
+
 ```
 
 * **`-Wall`**: enables all standard warnings.
