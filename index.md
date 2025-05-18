@@ -18,5 +18,5 @@ title: "fran-byte 42 Madrid"
 | Milestone | Project Repo         | Required Resources                          |
 |------------------|------------------|---------------------------------------------|
 | 2 | **[push_swap](https://github.com/fran-byte/born2beroot)** | • [push_swap_es](projects/push_swap_es.md)<br> • [Resources_en](projects/push_swap_en.md) |
-| 2 | **[pipex](https://github.com/fran-byte/born2beroot)** | • [gnl_es](projects/pipex_es.md)<br> • [pipex_en](projects/pipex_en.md) <br> • [Small Tester](https://github.com/fran-byte/42-pipex-tester)|
+| 2 | **[pipex](https://github.com/fran-byte/born2beroot)** | • [pipex_es](projects/pipex_es.md)<br> • [pipex_en](projects/pipex_en.md) <br> • [Small Tester](https://github.com/fran-byte/42-pipex-tester)|
 | 2 | **[so_long](https://github.com/fran-byte/born2beroot)** | • [so_long_es](projects/so_long_es.md)<br> • [ft_printf_en](projects/so_long_en.md) |
