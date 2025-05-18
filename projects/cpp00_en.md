@@ -27,8 +27,8 @@ A **class** in C++ is a **template** for creating objects. It defines:
 ```cpp
 class Animal {
 private:
-    std::string species;
-    int age;
+    std::string _species;
+    int _age;
 };
 ```
 
@@ -105,7 +105,7 @@ A method that **assigns a value** to an attribute:
 
 ```cpp
 void setSpecies(std::string newSpecies) {
-    species = newSpecies;
+    _species = newSpecies;
 }
 ```
 
@@ -115,7 +115,7 @@ A method that **returns the value** of an attribute:
 
 ```cpp
 std::string getSpecies() const {
-    return species;
+    return _species;
 }
 ```
 
@@ -128,24 +128,24 @@ std::string getSpecies() const {
 ```cpp
 class Animal {
 private:
-    std::string species;
-    int age;
+    std::string _species;
+    int _age;
 
 public:
     // Constructor
-    Animal(std::string sp, int ag) : species(sp), age(ag) {}
+    Animal(std::string sp, int ag) : _species(sp), _age(ag) {}
 
     // Destructor
     ~Animal() {}
 
     // Setter
     void setAge(int ag) {
-        age = ag;
+        _age = ag;
     }
 
     // Getter
     int getAge() const {
-        return age;
+        return _age;
     }
 
     void speak() const {
