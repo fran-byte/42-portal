@@ -170,5 +170,3 @@ cc -Wall -Wextra -Werror ft_printf.c ft_utils.c main.c
 * Haz una tabla o switch para despachar cada tipo de argumento.
 
 ---
-eres que te prepare también una plantilla de `Makefile`, estructura de archivos o algunos tests para validar tu `ft_printf`?
-```
