@@ -172,7 +172,7 @@ Usarlo te evita errores con valores negativos y te garantiza portabilidad (en 32
 
 ---
 
-### 🔗 Punteros y arrays básicos
+### 🔗 Punteros y arrays básicos  👉 [+Info](projects/resources/ptr_es.md)
 
 #### ✅ ¿Qué es un puntero?
 
