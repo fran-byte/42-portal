@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: "fran-byte 42 Madrid"
