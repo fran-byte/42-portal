@@ -15,12 +15,17 @@ Tener **todas las herramientas técnicas y conceptuales** necesarias para empeza
 
 #### ✅ ¿Qué es compilar?
 
-Es el proceso de transformar tu código fuente `.c` en **código máquina ejecutable**. El compilador más usado en 42 es `gcc`.
+Es el proceso de transformar tu código fuente `.c` en **código máquina ejecutable**. El compilador más usado en 42 es `cc`.
 
-#### 🔧 ¿Qué es `gcc` y cómo se usa?
+#### 🔧 ¿Qué es `cc` y cómo se usa?
 
 ```bash
+cc -Wall -Wextra -Werror archivo.c -o ejecutable
+
+# O podemos usar gcc si nuestro proyecto lo permite:
+
 gcc -Wall -Wextra -Werror archivo.c -o ejecutable
+
 ```
 
 * **`-Wall`**: muestra los *warnings* estándar.
