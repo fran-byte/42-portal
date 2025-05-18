@@ -20,6 +20,8 @@ Tener una comprensión clara de **cómo funciona un sistema Linux**, sus configu
 * **Crea una máquina virtual** con Debian (o Rocky Linux).
 * Asegúrate de usar las **configuraciones oficiales** (RAM, CPU, disco).
 
+  
+
 #### ✅ Debian (recomendado)
 
 * Familiarízate con comandos como: `apt`, `sudo`, `adduser`, `passwd`, `ufw`, `hostname`, `crontab`, `systemctl`, `auditd`.
@@ -94,7 +96,53 @@ Se logra configurando:
 ### 📦 7. Servicios activos
 
 * `ssh` debe estar activo y funcionando.
-* Otros servicios deben ser **mínimos y controlados** (`systemctl` y `ss` ayudan a revisar esto).
+
+¡Perfecto! Aquí tienes todos los comandos útiles para **Born2beroot con SSH y gestión de servicios**, puestos en un bloque de código con comentarios explicativos a la derecha de cada línea:
+
+---
+
+### 🧩 Comandos útiles (SSH, servicios, seguridad)
+
+```bash
+# 🔐 Conectarse por SSH a la VM
+ssh login@192.168.56.101             # Conexión al servidor remoto con tu usuario
+
+# 📦 Instalar el servidor SSH (si no está)
+sudo apt update                      # Actualizar los paquetes
+sudo apt install openssh-server     # Instalar el servicio SSH
+
+# 🔎 Comprobar estado del servicio SSH
+sudo systemctl status ssh           # Ver si está activo y funcionando
+
+# 🔁 Reiniciar el servicio SSH
+sudo systemctl restart ssh          # Reinicia el demonio sshd
+
+# 🚦 Habilitar SSH para que arranque al inicio
+sudo systemctl enable ssh           # Se inicia automáticamente al arrancar la máquina
+
+# 🧯 Parar el servicio SSH
+sudo systemctl stop ssh             # Detiene el servicio
+
+# 🚪 Abrir puerto 22 en el firewall
+sudo ufw allow ssh                  # Abre el puerto 22 usando el nombre del servicio
+sudo ufw enable                     # Activa el firewall (si aún no lo está)
+
+# 🧩 Ver conexiones activas a través de SSH
+ss -tnp | grep ssh                  # Muestra conexiones TCP relacionadas con SSH
+
+# 📜 Ver logs de acceso SSH
+sudo cat /var/log/auth.log          # Log completo de autenticación
+sudo grep sshd /var/log/auth.log    # Solo líneas relacionadas con sshd
+
+# 🧪 Probar usuario sudo
+sudo whoami                         # Debe devolver "root" si tu usuario tiene permisos
+
+```
+
+---
+
+¿Quieres que este bloque lo integre directamente en una página `.md` tipo `born2beroot_ssh.md` o como sección extra dentro de tu guía principal en GitHub Pages?
+
 
 ---
 
