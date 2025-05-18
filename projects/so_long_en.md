@@ -154,6 +154,5 @@ This map is valid if:
 
 * [MiniLibX Linux (42Docs)](https://harm-smits.github.io/42docs/libs/minilibx)
 * [Fundamentals of 2D Game Development in C](https://www.gamedev.net/)
-* [MiniLibX Example Project](https://github.com/42Paris/minilibx-linux)
-
+  
 ---
