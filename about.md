@@ -6,7 +6,7 @@ title: "fran-byte 42 Madrid"
 <div style="text-align: center;">
   <img src="https://avatars.githubusercontent.com/u/14311476?v=4"
        alt="Foto de perfil"
-       width="150"
+       width="175"
        style="border-radius: 50%; border: 2px solid #fff;" />
 </div>
 
