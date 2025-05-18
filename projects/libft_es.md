@@ -1,3 +1,8 @@
+---
+layout: default
+title: "fran-byte 42 Madrid"
+---
+
 ## 🔹 1. Fundamentos previos (antes de atacar libft)
 
 ### 📌 Objetivo:
