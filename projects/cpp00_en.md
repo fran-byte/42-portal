@@ -104,6 +104,5 @@ c++ -Wall -Wextra -Werror -std=c++98
 * [cplusplus.com](https://cplusplus.com/)
 * [cppreference.com](https://en.cppreference.com/)
 * `man string`, `man iomanip`, `man ctime`
-* [42 Madrid Peer Videos](https://intra.42.fr)
 
 ---
