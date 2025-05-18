@@ -25,7 +25,7 @@ Tener una comprensión clara de **cómo funciona un sistema Linux**, sus configu
 #### ✅ Debian (recomendado)
 
 * Familiarízate con comandos como: `apt`, `sudo`, `adduser`, `passwd`, `ufw`, `hostname`, `crontab`, `systemctl`, `auditd`.
-* Aquí puedes ver algunos importantes [Unix Commnads](projects/unix.md)
+* Aquí puedes ver algunos importantes [Unix Commnads](unix.md)
 
 #### ✅ Markdown y Word
 
