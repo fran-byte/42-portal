@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: "fran-byte 42 Madrid"
+---
 
 # 🔐 Born2beroot — Guía para Enfrentar el Proyecto con Garantías
 
