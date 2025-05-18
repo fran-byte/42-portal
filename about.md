@@ -35,8 +35,6 @@ Feel free to explore my repositories and connect with me!
 
 ---
 
-# 👋 ¡Bienvenido a mi perfil de GitHub!
-
 ## Sobre mí
 Soy Francisco, con más de 25 años de experiencia en electrónica, especializado en diagnóstico de PCBs y reparación de maquinaria bancaria. Actualmente me estoy formando en programación en [42 Madrid](https://42madrid.com/), una escuela intensiva y práctica de informática.
 
