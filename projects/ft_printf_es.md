@@ -19,7 +19,7 @@ write(1, &c, 1);  // imprime un solo carácter
 
 #### ✅ `va_list` (variadic functions)
 
-Para manejar argumentos variables (`...`) necesitas:
+Para manejar argumentos variables (`...`) necesitamos usar macros del archivo <stdarg.h> :
 
 ```c
 #include <stdarg.h>
@@ -29,6 +29,13 @@ va_start(args, format);
 ... // va_arg(args, type)
 va_end(args);
 ```
+va_list: Declara una variable que mantendrá la información sobre los argumentos adicionales.
+
+va_start: Inicializa la variable del tipo va_list con los parámetros variables.
+
+va_arg: Se utiliza para extraer cada argumento.
+
+va_end: Limpia la lista de argumentos cuando se han procesado todos.
 
 ---
 
