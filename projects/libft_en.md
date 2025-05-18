@@ -1,5 +1,6 @@
-Here’s the full translation of your detailed foundation section into English, adapted for clarity and fluency while preserving the original structure:
-
+---
+layout: default
+title: "fran-byte 42 Madrid"
 ---
 
 ## 🔹 1. Prerequisites (Before Starting Libft)
