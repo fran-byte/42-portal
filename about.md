@@ -2,9 +2,9 @@
 layout: default
 title: "fran-byte 42 Madrid"
 ---
-# Mi Perfil de GitHub
 
-![Foto de perfil](https://avatars.githubusercontent.com/u/14311476?v=4)
+<img src="https://avatars.githubusercontent.com/u/14311476?v=4" alt="Foto de perfil" width="150"/>
+
 
 ## About Me
 Hi! I'm Francisco, an electronics specialist with 25+ years of hands-on experience in PCB diagnostics and banking machinery repair. I'm currently transitioning into the world of programming through the rigorous training program at [42 Madrid](https://42madrid.com/).
