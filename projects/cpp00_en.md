@@ -9,8 +9,173 @@ title: "fran-byte 42 Madrid"
 
 Introduce the basic concepts of C++: **classes**, **member functions**, **streams**, **const**, **static**, and initialization lists. Emphasis on object-oriented styles following the C++98 standard.
 
+---
+
+## 🔹 What is a class?
+
+A **class** in C++ is a **template** for creating objects. It defines:
+
+* **Attributes** (also called fields or members): represent the state of the object.
+* **Methods** (also called member functions): represent the behavior of the object.
 
 ---
+
+## 🔸 Attributes (Member Variables)
+
+**Attributes** are variables declared inside the class. They can have different access levels:
+
+```cpp
+class Animal {
+private:
+    std::string species;
+    int age;
+};
+```
+
+* By convention, attributes are defined as `private` to protect them from being accessed directly from outside.
+* Each **instance (object)** of the class has its **own copy** of these attributes.
+
+---
+
+## 🔸 Methods (Member Functions)
+
+Methods allow the object to **do something** or for other code to **interact with it**.
+
+```cpp
+class Animal {
+public:
+    void makeSound();
+    void sleep();
+};
+```
+
+These methods would be called from outside like this:
+
+```cpp
+Animal dog;
+dog.makeSound();
+```
+
+---
+
+## 🔸 Constructors
+
+A **constructor** is a special function that runs automatically when an object is created.
+
+```cpp
+class Animal {
+public:
+    Animal(); // Default constructor
+};
+```
+
+It can also be overloaded:
+
+```cpp
+class Animal {
+public:
+    Animal(std::string type, int years);
+};
+```
+
+The goal of a constructor is to **initialize** the object with valid values from the beginning.
+
+---
+
+## 🔸 Destructors
+
+A **destructor** runs automatically when an object **goes out of scope** or is **deleted**. Its purpose is to **free resources**, although for simple objects, it may be empty.
+
+```cpp
+class Animal {
+public:
+    ~Animal(); // Destructor
+};
+```
+
+---
+
+## 🔸 Setters and Getters
+
+To safely access `private` attributes, we use **public methods** called **setters** and **getters**.
+
+### ✅ Setter
+
+A method that **assigns a value** to an attribute:
+
+```cpp
+void setSpecies(std::string newSpecies) {
+    species = newSpecies;
+}
+```
+
+### ✅ Getter
+
+A method that **returns the value** of an attribute:
+
+```cpp
+std::string getSpecies() const {
+    return species;
+}
+```
+
+> The `const` modifier means the method **does not change** the object’s state.
+
+---
+
+## 🧩 Full Example:
+
+```cpp
+class Animal {
+private:
+    std::string species;
+    int age;
+
+public:
+    // Constructor
+    Animal(std::string sp, int ag) : species(sp), age(ag) {}
+
+    // Destructor
+    ~Animal() {}
+
+    // Setter
+    void setAge(int ag) {
+        age = ag;
+    }
+
+    // Getter
+    int getAge() const {
+        return age;
+    }
+
+    void speak() const {
+        std::cout << "I am a " << species << " and I am " << age << " years old." << std::endl;
+    }
+};
+```
+
+And its usage:
+
+```cpp
+Animal cat("Feline", 3);
+cat.speak();
+cat.setAge(4);
+std::cout << "Updated age: " << cat.getAge() << std::endl;
+```
+
+---
+
+## 📌 Summary
+
+| Concept     | Purpose                                       |
+| ----------- | --------------------------------------------- |
+| Class       | Defines a new custom data type                |
+| Attribute   | Internal state of an object                   |
+| Method      | Functions that describe the object’s behavior |
+| Constructor | Initializes the object upon creation          |
+| Destructor  | Frees resources when the object is destroyed  |
+| Setter      | Method to modify a private attribute          |
+| Getter      | Method to read a private attribute            |
 
 ---
 
