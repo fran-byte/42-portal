@@ -154,7 +154,6 @@ Este mapa es válido si:
 
 * [MiniLibX Linux (42Docs)](https://harm-smits.github.io/42docs/libs/minilibx)
 * [Fundamentos de juegos 2D con C](https://www.gamedev.net/)
-* [Ejemplo simple de MiniLibX](https://github.com/42Paris/minilibx-linux)
 
 ---
 
