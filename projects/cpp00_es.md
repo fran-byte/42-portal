@@ -26,8 +26,8 @@ Los **atributos** son variables declaradas dentro de la clase. Pueden tener dist
 ```cpp
 class Animal {
 private:
-    std::string species;
-    int age;
+    std::string _species;
+    int _age;
 };
 ```
 
@@ -104,7 +104,7 @@ Un método que **asigna un valor** a un atributo:
 
 ```cpp
 void setSpecies(std::string newSpecies) {
-    species = newSpecies;
+    _species = newSpecies;
 }
 ```
 
@@ -114,7 +114,7 @@ Un método que **devuelve el valor** de un atributo:
 
 ```cpp
 std::string getSpecies() const {
-    return species;
+    return _species;
 }
 ```
 
@@ -127,24 +127,24 @@ std::string getSpecies() const {
 ```cpp
 class Animal {
 private:
-    std::string species;
-    int age;
+    std::string _species;
+    int _age;
 
 public:
     // Constructor
-    Animal(std::string sp, int ag) : species(sp), age(ag) {}
+    Animal(std::string sp, int ag) : _species(sp), _age(ag) {}
 
     // Destructor
     ~Animal() {}
 
     // Setter
     void setAge(int ag) {
-        age = ag;
+        _age = ag;
     }
 
     // Getter
     int getAge() const {
-        return age;
+        return _age;
     }
 
     void speak() const {
