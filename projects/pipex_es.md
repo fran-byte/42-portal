@@ -3,149 +3,200 @@ layout: default
 title: "fran-byte 42 Madrid"
 ---
 
-## 🔹 1. Fundamentos previos (antes de atacar pipex)
+## 🔹 1. Fundamentos Previos (Antes de Empezar Philosophers)
 
 ### 📌 Objetivo:
 
-Reproducir el comportamiento de las **tuberías (`|`) y redirecciones de entrada/salida de la shell**, utilizando llamadas al sistema en C. Tu programa debe **ejecutar dos comandos en secuencia**, redirigiendo entrada y salida a archivos, y **conectándolos entre sí mediante una tubería**.
+Este proyecto se centra en la **programación concurrente**. Te desafía a resolver un problema clásico de la informática que enseña cómo gestionar de manera eficiente y segura **recursos compartidos** entre múltiples hilos. Los conceptos clave son **concurrencia**, **sincronización** y el uso de **hilos (threads)** y **mutexes**.
+
+Un grupo de filósofos alterna entre tres actividades: **comer**, **pensar** y **dormir**. Su acceso a los recursos necesarios (tenedores) es limitado, y la solución está en asegurar que cada filósofo pueda completar sus ciclos **sin conflictos ni bloqueos**.
 
 ---
 
-## 🔧 ¿Qué hace `pipex`?
+## 🔹 2. El Problema de los Filósofos Comensales
 
-Ejecuta dos comandos encadenados, conectando su entrada y salida de forma controlada:
+Propuesto originalmente por **Edsger Dijkstra**, es una metáfora clásica en la programación concurrente: varios procesos (filósofos) deben coordinarse para acceder a recursos compartidos limitados (tenedores), evitando **interbloqueos**, **inanición** o **condiciones de carrera**.
+
+### 📅 Planteamiento del Problema
+
+* Cinco filósofos están sentados en una mesa redonda.
+* Cada uno alterna entre **comer**, **pensar** y **dormir**.
+* Hay cinco tenedores, uno entre cada par de filósofos.
+* Para comer, un filósofo necesita **el tenedor de la izquierda y el de la derecha**.
+* Tras comer, piensan, luego duermen, y repiten el ciclo.
+
+Problemas pueden surgir si no hay una correcta sincronización:
+
+### 🔒 Problemas Clave
+
+* **Interbloqueo (Deadlock)**: Cada filósofo toma un tenedor y espera indefinidamente el otro.
+* **Inanición (Starvation)**: Algunos nunca logran comer porque otros acaparan los recursos.
+* **Condiciones de carrera (Race conditions)**: Varios intentan acceder al mismo tenedor simultáneamente, generando inconsistencias.
+
+---
+
+## 🔹 3. Conceptos Teóricos
+
+Este proyecto introduce dos herramientas críticas para la concurrencia:
+
+### 🔢 Hilos (Threads)
+
+* Un hilo es la unidad más pequeña de ejecución.
+* Comparten memoria/recursos del proceso padre, siendo ligeros pero propensos a conflictos de estado compartido.
+* Cada filósofo es un hilo independiente.
+
+En C, usarás **POSIX Threads (pthreads)**:
+
+* `pthread_create` → Crea un nuevo hilo.
+* `pthread_join` → Espera a que termine un hilo.
+* `pthread_exit` → Finaliza un hilo correctamente.
+* Usa `usleep` para simular pausas.
+
+### ⏳ Cambio de Contexto (Context Switching)
+
+* Los hilos no se ejecutan verdaderamente en paralelo (salvo múltiples núcleos).
+* El SO alterna entre ellos rápidamente.
+* La **sincronización adecuada** es esencial.
+
+### 🔐 Mutexes (Exclusión Mutua)
+
+* Los mutexes previenen el acceso simultáneo a recursos compartidos.
+* Cada tenedor está protegido por un mutex.
+
+Funciones clave:
+
+* `pthread_mutex_init`
+* `pthread_mutex_lock`
+* `pthread_mutex_unlock`
+* `pthread_mutex_destroy`
+
+Los filósofos deben:
+
+* Bloquear los mutex de los dos tenedores para comer.
+* Liberarlos al terminar.
+
+---
+
+## 🔹 4. Estrategias de Solución
+
+### 🔎 Asignación Ordenada de Recursos
+
+* Algunos filósofos toman primero el tenedor izquierdo, otros el derecho.
+* Reduce el riesgo de esperas circulares.
+
+### ❌ Limitar Filósofos Comiendo Concurrentemente
+
+* Solo permite que (N - 1) filósofos intenten comer al mismo tiempo.
+
+### 🔼 Jerarquía de Tenedores
+
+* Asigna un orden a los tenedores.
+* Los filósofos deben tomarlos siempre en orden ascendente.
+
+---
+
+## 📃 Estructura del Proyecto
+
+### Descripción:
+
+El proyecto **Philosophers** simula el problema usando hilos y mutexes.
+
+### Estructura de Archivos:
+
+```
+philosophers/
+├── philo.c               // Entrada principal, validación de argumentos
+├── philo_utils.c         // Utilidades de tiempo, atoi, sleep
+├── philo_start.c         // Inicialización y arranque de simulación
+├── philo_create.c        // Rutina de filósofos (comer, dormir, pensar)
+├── philo_monitor_deaths.c // Monitoreo de inanición
+├── philo.h               // Header con estructuras, constantes y prototipos
+```
+
+---
+
+## 📈 Características Principales
+
+### 📊 Validación de Argumentos
+
+* Requiere 4 o 5 argumentos: número de filósofos, tiempo para morir, para comer, para dormir, \[comidas requeridas]
+* Todos deben ser enteros positivos.
+
+### ⚖️ Inicialización de la Simulación
+
+* Se inicializan tenedores (mutexes) y filósofos.
+* Se crea un hilo por filósofo.
+
+### 🤔 Ciclo de Vida del Filósofo
+
+* `take_forks`: bloquear tenedores izquierdo y derecho
+* Comer → dormir → pensar
+* Se maneja especialmente el caso de un solo filósofo.
+
+### 🔎 Monitoreo de Muertes
+
+* `monitor_deaths`: hilo independiente
+* Verifica si algún filósofo excedió `time_to_die` sin comer
+* Si ocurre, registra e interrumpe la simulación
+
+### ⚖️ Sincronización
+
+* Mutexes aseguran acceso exclusivo a tenedores
+* Mensajes en consola también están protegidos con mutex
+
+---
+
+## 🔴 Resumen de `philo_monitor_deaths.c`
+
+### Función: `monitor_deaths`
+
+* Verifica continuamente el tiempo desde la última comida de cada filósofo
+* Si `tiempo_desde_ultima_comida > time_to_die`:
+
+  * Imprime mensaje de muerte
+  * Detiene la simulación
+
+Mutexes protegen el acceso compartido a `last_meal` para evitar condiciones de carrera.
+
+---
+
+## 📝 Casos de Prueba
+
+Dentro de `philo_start.c`:
+
+```c
+// Nadie debería morir:
+./philo 5 800 200 200
+./philo 5 600 150 150
+./philo 4 410 200 200
+./philo 100 800 200 200
+./philo 105 800 200 200
+./philo 200 800 200 200
+
+// Un filósofo debería morir:
+./philo 1 800 200 200
+./philo 4 310 200 100
+./philo 4 200 205 200
+
+// Casos con error:
+./philo -5 600 200 200
+./philo 4 -5 200 200
+./philo 4 600 -5 200
+./philo 4 600 200 -5
+./philo 4 600 200 200 -5
+
+// Verificación de fugas de memoria:
+valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all ./philo
+```
+
+---
+
+## 💡 Valgrind
+
+Siempre usa **Valgrind** para detectar fugas de memoria y asegurar el correcto manejo:
 
 ```bash
-./pipex infile cmd1 cmd2 outfile
-````
-
-Es equivalente a lo que harías en la shell:
-
-```bash
-< infile cmd1 | cmd2 > outfile
+valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all ./philo 5 800 200 200
 ```
-
-📌 Es decir:
-
-* La entrada de `cmd1` proviene de un archivo.
-* Su salida se conecta a la entrada de `cmd2` usando un `pipe`.
-* La salida final de `cmd2` se redirige a otro archivo.
-
----
-
-## 🔁 Flujo de ejecución del programa
-
-1. Abrir `infile` y redirigirlo como `stdin` de `cmd1`.
-2. Crear un `pipe` para conectar `cmd1` y `cmd2`.
-3. Redirigir la salida (`stdout`) de `cmd1` al pipe.
-4. Redirigir la entrada (`stdin`) de `cmd2` al pipe.
-5. Abrir `outfile` y redirigir la salida de `cmd2` allí.
-
-📌 Cada uno de estos pasos se realiza en procesos hijos creados con `fork()`.
-
----
-
-## 🧠 Funciones clave del proyecto
-
-| Función    | Descripción                                                    |
-| ---------- | -------------------------------------------------------------- |
-| `pipe()`   | Crea un canal de comunicación (pipe) entre procesos.           |
-| `fork()`   | Crea un proceso hijo para ejecutar un comando.                 |
-| `dup2()`   | Redirige `stdin` o `stdout` a un descriptor de archivo o pipe. |
-| `execve()` | Ejecuta el comando especificado (reemplaza el proceso actual). |
-| `open()`   | Abre archivos para lectura o escritura.                        |
-| `close()`  | Cierra descriptores innecesarios.                              |
-| `wait()`   | Espera a que los hijos terminen para evitar procesos zombies.  |
-
----
-
-## 📦 Búsqueda del `PATH` (resolución de comandos)
-
-Para ejecutar un comando como `"ls"` o `"grep"`, debes buscarlo en los directorios de la variable de entorno `PATH`:
-
-### 🔍 Proceso:
-
-1. Obtener la variable `PATH` desde `envp[]`.
-2. Separar los directorios por `:`.
-3. Combinar cada directorio con el nombre del comando.
-4. Verificar si es ejecutable con `access(path, X_OK)`.
-5. Pasar esa ruta a `execve()`.
-
----
-
-## 🧪 Ejemplo de uso
-
-```bash
-./pipex input.txt "grep hello" "wc -l" output.txt
-```
-
-Equivale a:
-
-```bash
-< input.txt grep hello | wc -l > output.txt
-```
-
-✅ Flujo:
-
-1. `input.txt` → `stdin` de `grep hello`
-2. `stdout` de `grep hello` → `stdin` de `wc -l` (mediante pipe)
-3. `stdout` de `wc -l` → `output.txt`
-
----
-
-## ⚙️ Diagrama de flujo
-
-![Diagrama pipex](../../img/milestone_2/pipex_flujo.png)
-
----
-
-## 📉 Problemas comunes
-
-1. ❌ **Descriptores mal cerrados**: pueden causar deadlocks o fugas.
-2. 🔐 **Permisos de archivos**: asegúrate de tener acceso de lectura/escritura.
-3. 🚫 **Errores en llamadas del sistema**: siempre usa `perror()` o `strerror(errno)` para depurar.
-
----
-
-## 🛠️ Funciones autorizadas
-
-Puedes usar:
-
-* `open`, `close`, `read`, `write`, `malloc`, `free`, `perror`, `strerror`
-* `access`, `dup`, `dup2`, `execve`, `exit`, `fork`, `pipe`, `unlink`, `wait`, `waitpid`
-* Tu propia implementación de `ft_printf` si lo necesitas.
-
----
-
-## 🧱 Estructura mínima del proyecto
-
-```
-pipex/
-├── pipex.c
-├── pipex.h
-├── path_utils.c
-├── exec_utils.c
-├── error_handling.c
-├── main.c
-```
-
----
-
-## 📚 Recursos útiles
-
-* [`man 2 pipe`](https://man7.org/linux/man-pages/man2/pipe.2.html)
-* [`man 2 execve`](https://man7.org/linux/man-pages/man2/execve.2.html)
-* [`man 3 access`](https://man7.org/linux/man-pages/man3/access.3p.html)
-* [Artículo: cómo funcionan las pipes en C (español)](https://www.cs.buap.mx/~hilario_sm/slide/SO-1/Pipe.pdf)
-
----
-
-## 🧠 Consejos prácticos
-
-* ✨ Empieza resolviendo un comando sencillo antes de implementar los `fork()`.
-* 💡 Implementa la búsqueda de comandos (`PATH`) como una función separada.
-* 🧪 Prueba con archivos reales y errores controlados (ficheros inexistentes, sin permisos...).
-* 🧼 Limpia bien los `malloc` y los `pipes`, usa `valgrind`.
-* 📦 No olvides verificar argumentos: número correcto, existencia de archivos, etc.
 
 ---
