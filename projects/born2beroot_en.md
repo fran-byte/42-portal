@@ -23,6 +23,8 @@ To gain a clear understanding of **how a Linux system works**, its basic securit
 #### ✅ Debian (recommended)
 
 * Familiarize yourself with commands like: `apt`, `sudo`, `adduser`, `passwd`, `ufw`, `hostname`, `crontab`, `systemctl`, `auditd`.
+* Here you can find some important [Unix Commands](unix.md)
+
 
 #### ✅ Markdown and Word
 
