@@ -1,8 +1,3 @@
-¡Perfecto! A continuación te dejo una sección equivalente para el proyecto **get\_next\_line**, siguiendo el mismo estilo que usaste para `libft`: clara, bien estructurada, explicativa, y con ejemplos útiles.
-
----
-
-````markdown
 ---
 layout: default
 title: "fran-byte 42 Madrid"
