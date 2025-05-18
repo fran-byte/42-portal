@@ -1,4 +1,6 @@
 title: "My 42 Madrid Projects"
 remote_theme: pages-themes/midnight@v0.2.0
 plugins:
-  - jekyll-remote-theme 
+  - jekyll-remote-theme
+baseurl: "/42-portal"
+
