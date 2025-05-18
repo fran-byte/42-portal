@@ -25,5 +25,5 @@ title: "fran-byte 42 Madrid"
 
 | Milestone | Project Repo         | Required Resources                          |
 |------------------|------------------|---------------------------------------------|
-| 3 | **[philosophers(https://github.com/fran-byte/born2beroot)** | • [philosophers_es](projects/philosophers_es.md)<br> • [philosophers_en](projects/philosophers_en.md) |
+| 3 | **[philosophers](https://github.com/fran-byte/born2beroot)** | • [philosophers_es](projects/philosophers_es.md)<br> • [philosophers_en](projects/philosophers_en.md) |
 | 3 | **[minishell](https://github.com/fran-byte/born2beroot)** | • [minishell_es](projects/minishell_es.md)<br> • [minishell_en](projects/minishell_en.md) |
