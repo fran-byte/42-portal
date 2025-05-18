@@ -6,6 +6,7 @@ title: "fran-byte 42 Madrid"
 
 | Projects         | Required Resources                          |
 |------------------|---------------------------------------------|
-| **[Libft](https://github.com/fran-byte/libft)** | • [42 functions](projects/libft_es.md) • |
+| **[Libft](https://github.com/fran-byte/libft)** | • [42 functions_es](projects/libft_es.md) • |
+|  | • [42 functions_en](projects/libft_en.md) • |
 | **[Born2beroot](https://github.com/fran-byte/born2beroot)** | • [Debian Install](link3)<br>• [SSH Commands](link4) |
 
