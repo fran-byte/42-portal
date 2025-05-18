@@ -20,7 +20,7 @@ Tener una comprensión clara de **cómo funciona un sistema Linux**, sus configu
 * **Crea una máquina virtual** con Debian (o Rocky Linux).
 * Asegúrate de usar las **configuraciones oficiales** (RAM, CPU, disco).
 
-  
+
 
 #### ✅ Debian (recomendado)
 
