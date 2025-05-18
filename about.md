@@ -3,12 +3,12 @@ layout: default
 title: "fran-byte 42 Madrid"
 ---
 
-<img src="https://avatars.githubusercontent.com/u/14311476?v=4" 
-     alt="Foto de perfil" 
-     width="150" 
-     style="border-radius: 50%; border: 2px solid #fff;" />
-
-
+<div style="text-align: center;">
+  <img src="https://avatars.githubusercontent.com/u/14311476?v=4"
+       alt="Foto de perfil"
+       width="150"
+       style="border-radius: 50%; border: 2px solid #fff;" />
+</div>
 
 ## About Me
 Hi! I'm Francisco, an electronics specialist with 25+ years of hands-on experience in PCB diagnostics and banking machinery repair. I'm currently transitioning into the world of programming through the rigorous training program at [42 Madrid](https://42madrid.com/).
