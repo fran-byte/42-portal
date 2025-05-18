@@ -171,7 +171,7 @@ Using it avoids negative values and ensures compatibility across platforms (32-b
 
 ---
 
-### 🔗 Pointers and Basic Arrays
+### 🔗 Pointers and Basic Arrays 👉 [+Info](resources/ptr_en.md)
 
 #### ✅ What is a pointer?
 
