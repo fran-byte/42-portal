@@ -26,3 +26,14 @@ title: "fran-byte 42 Madrid"
 |------------------|------------------|---------------------------------------------|
 | 3 | **[philosophers](https://github.com/fran-byte/born2beroot)** | • [philosophers_es](projects/philosophers_es.md)<br> • [philosophers_en](projects/philosophers_en.md) |
 | 3 | **[minishell](https://github.com/fran-byte/born2beroot)** | • [minishell_es](projects/minishell_es.md)<br> • [minishell_en](projects/minishell_en.md) |
+
+# 🎮 Milestone 4 Projects 💻
+
+| Milestone | Project Repo         | Required Resources                          |
+|------------------|------------------|---------------------------------------------|
+| 4 | **[CPP00](https://github.com/fran-byte/born2beroot)** | • [cpp00_es](projects/cpp00_es.md)<br> • [cpp00_en](projects/cpp00_en.md) |
+| 4 | **[CPP01](https://github.com/fran-byte/born2beroot)** | • [cpp01_es](projects/cpp01_es.md)<br> • [cpp01_en](projects/cpp01_en.md) |
+| 4 | **[CPP02](https://github.com/fran-byte/born2beroot)** | • [cpp02_es](projects/cpp02_es.md)<br> • [cpp02_en](projects/cpp02_en.md) |
+| 4 | **[CPP03](https://github.com/fran-byte/born2beroot)** | • [cpp03_es](projects/cpp03_es.md)<br> • [cpp03_en](projects/cpp03_en.md) |
+| 4 | **[CPP04](https://github.com/fran-byte/born2beroot)** | • [cpp04_es](projects/cpp04_es.md)<br> • [cpp04_en](projects/cpp04_en.md) |
+
