@@ -236,6 +236,7 @@ char *ft_strdup (const char *s)`
 Description | Param. #1 | Valores de Retorno
 :-----------: | :-----------: | :-----------:
 **Duplicates** the string "s". Memory for the new string is obtained with malloc and can be freed with free | The string to duplicate | A pointer to the duplicated string. NULL if there was not enough memory available
+
 <br><br><br><br><br>
 
 # Part 2 - Additional Features
