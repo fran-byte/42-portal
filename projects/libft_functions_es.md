@@ -14,7 +14,6 @@ int ft_isalpha (int c)
 
 Descripción | Param. #1 | Valor de Retorno
 :-----------: | :-----------: | :-----------:
-
 Verifica si es un carácter **alfabético**.) | El carácter a probar | 0 si el carácter es falso y 1 si el carácter es verdadero
 
 ## [ft_isdigit](../0/libft/ft_isdigit.c)
