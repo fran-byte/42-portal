@@ -15,8 +15,8 @@ Have **all the technical and conceptual tools** necessary to configure and secur
 
 #### ✅ Download Debian ISO and Install VirtualBox
 
-1. **Download Debian ISO**: Click here
-2. **Download VirtualBox**: Click here
+1. **Download Debian ISO**:
+2. **Download VirtualBox**:
 
 #### 🔧 Creating the Virtual Machine
 
