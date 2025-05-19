@@ -3,7 +3,9 @@ layout: default
 title: "fran-byte 42 Madrid"
 ---
 
-## 🔹 1. Fundamentos previos (antes de atacar libft) 👉 [funciones](libft_functions_es.md)
+## 🔹 1. Fundamentos previos (antes de atacar libft) 
+
+## 👉 [funciones](libft_functions_es.md)
 
 ### 📌 Objetivo:
 
