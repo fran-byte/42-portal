@@ -5,6 +5,8 @@ title: "fran-byte 42 Madrid"
 
 ## 🔹 1. Prerequisites (Before Starting Libft)
 
+## 👉 [functions](libft_functions_en.md)
+
 ### 📌 Goal:
 
 To have **all the technical and conceptual tools** you need to start Libft **with confidence**, avoiding common mistakes and fully understanding **what you're doing and why**.
