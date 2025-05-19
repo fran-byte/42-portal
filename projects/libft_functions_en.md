@@ -1,3 +1,7 @@
+---
+layout: default
+title: "fran-byte 42 Madrid"
+---
 
 # Part 1 - libc functions
 
