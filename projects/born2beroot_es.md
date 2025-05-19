@@ -15,8 +15,8 @@ Tener **todas las herramientas técnicas y conceptuales** necesarias para config
 
 #### ✅ Descarga de ISO de Debian e instalación de VirtualBox
 
-1. **Descarga de ISO de Debian**: Click aquí
-2. **Descarga de VirtualBox**: Click aquí
+1. **Descarga de ISO de Debian**
+2. **Descarga de VirtualBox**
 
 #### 🔧 Creación de la máquina virtual
 
