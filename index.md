@@ -5,13 +5,16 @@ title: "fran-byte 42 Madrid"
 
 # 🚀 Milestone 0
 
-**[Libft](https://fran-byte.github.io/42-libft/)**
+| Project Repo         | 
+|------------------|
+| **[Libft](https://fran-byte.github.io/42-libft/)** |
 
 # 🚀 Milestone 1
 
-**[Born2beroot](https://github.com/fran-byte/42-born2beroot/index.md)** 
-
-**[ft_printf](https://github.com/fran-byte/42-ft_printf/index.md)** 
+| Project Repo         | 
+|------------------|
+| **[Born2beroot](https://github.com/fran-byte/42-born2beroot/index.md)** |
+| **[ft_printf](https://github.com/fran-byte/42-ft_printf/index.md)** |
 
 
 # 🎯 Milestone 2 Projects 💻
