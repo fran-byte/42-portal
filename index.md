@@ -6,7 +6,7 @@ title: "fran-byte 42 Madrid"
 
 | Project Repo         | Required Resources                          |
 |------------------|---------------------------------------------|
-| **[Libft](https://github.com/fran-byte/libft)** | • Docu: [ES](projects/libft_es.md) • [EN](fran-byte/42-libft/wiki/English-Version) • [Small Tester](https://github.com/fran-byte/42-libft-tester)|
+| **[Libft](https://github.com/fran-byte/libft)** | • Docu: [ES](projects/libft_es.md) • [EN](projects/libft_en.md) • [Small Tester](https://github.com/fran-byte/42-libft-tester)|
 | **[Born2beroot](#)** | • Docu: [ES](projects/born2beroot_es.md) • [EN](projects/born2beroot_en.md) |
 | **[get_next_line](https://github.com/fran-byte/born2beroot)** | • Docu: [ES](projects/gnl_es.md) • [EN](projects/gnl_en.md)  • [Small Tester](https://github.com/fran-byte/42-gnl-tester)|
 | **[ft_printf](https://github.com/fran-byte/born2beroot)** | • Docu: [ES](projects/ft_printf_es.md) • [EN](projects/ft_printf_en.md)  • [Small Tester](https://github.com/fran-byte/42-ft_printf-tester)|
