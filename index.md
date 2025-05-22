@@ -5,9 +5,14 @@ title: "fran-byte 42 Madrid"
 
 # ✨ Milestone 0
 
-| Project        | 
-|------------------|
-| [Libft](https://fran-byte.github.io/42-libft/) |
+<table>
+  <tr>
+    <th colspan="1" style="text-align: left;">Project</th>
+  </tr>
+  <tr>
+    <td><a href="https://fran-byte.github.io/42-libft/">libft</a></td>   
+  </tr>
+</table>
 
 # 🚀 Milestone 1
 
