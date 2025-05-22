@@ -11,9 +11,16 @@ title: "fran-byte 42 Madrid"
 
 # 🚀 Milestone 1
 
-| Project         | 
-|------------------|
-| **[Born2beroot](https://github.com/fran-byte/42-born2beroot/index.md)** • **[ft_printf](https://github.com/fran-byte/42-ft_printf/index.md)** • **[get_next_line](https://github.com/fran-byte/42-get-next-line/index.md)**|
+<table>
+  <tr>
+    <th colspan="3" style="text-align: center;">Project</th>
+  </tr>
+  <tr>
+    <td><a href="https://fran-byte.github.io/42-born2beroot/index">Born2beroot</a></td>
+    <td><a href="https://fran-byte.github.io/42-ft_printf/index">ft_printf</a></td>
+    <td><a href="https://fran-byte.github.io/42-get-next-line/index">get_next_line</a></td>
+  </tr>
+</table>
 
 
 
