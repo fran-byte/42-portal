@@ -7,7 +7,7 @@ title: "fran-byte 42 Madrid"
 
 | Project        | 
 |------------------|
-| **[Libft](https://fran-byte.github.io/42-libft/)** |
+| [Libft](https://fran-byte.github.io/42-libft/) |
 
 # 🚀 Milestone 1
 
