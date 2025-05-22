@@ -2,10 +2,15 @@
 layout: default
 title: "fran-byte 42 Madrid"
 ---
-# 🚀 Milestone 0-1 Projects 💻
 
-| Project Repo         | Required Resources                          |
-|------------------|---------------------------------------------|
+# 🚀 Milestone 0
+
+| **[Libft](https://fran-byte.github.io/42-libft/)** |
+
+# 🚀 Milestone 1
+
+
+
 | **[Libft](https://fran-byte.github.io/42-libft/)** | • Docu: [ES](projects/libft_es.md) • [EN](projects/libft_en.md) • [Small Tester](https://github.com/fran-byte/42-libft-tester)|
 | **[Born2beroot](https://github.com/fran-byte/42-born2beroot/index.md)** | • Docu: [ES](projects/born2beroot_es.md) • [EN](projects/born2beroot_en.md) |
 | **[get_next_line](https://github.com/fran-byte/42-get-next-line/index.md)** | • Docu: [ES](projects/gnl_es.md) • [EN](projects/gnl_en.md)  • [Small Tester](https://github.com/fran-byte/42-gnl-tester)|
