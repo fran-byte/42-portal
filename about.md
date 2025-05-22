@@ -43,7 +43,7 @@ Feel free to explore my repositories and connect with me!
 ---
 
 ## Sobre mí
-Soy Francisco, con más de 25 años de experiencia en electrónica, especializado en diagnóstico de PCBs y reparación de maquinaria bancaria. Actualmente me estoy formando en programación en [42 Madrid](https://42madrid.com/), una escuela intensiva y práctica de informática.
+¡Hola! Soy Francisco, especialista en electrónica con más de 25 años de experiencia práctica en diagnóstico de PCBs y reparación de maquinaria bancaria. Actualmente estoy haciendo la transición al mundo de la programación a través del exigente programa de formación de 42 Madrid.
 
 ## 🛠️ Habilidades
 - **Electrónica**: Diagnóstico y reparación de PCBs y sistemas mecánicos.
