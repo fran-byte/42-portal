@@ -13,7 +13,7 @@ title: "fran-byte 42 Madrid"
 
 <table>
   <tr>
-    <th colspan="3" style="text-align: center;">Project</th>
+    <th colspan="3" style="text-align: left;">Project</th>
   </tr>
   <tr>
     <td><a href="https://fran-byte.github.io/42-born2beroot/index">Born2beroot</a></td>
