@@ -3,7 +3,7 @@ layout: default
 title: "fran-byte 42 Madrid"
 ---
 
-# 🚀 Milestone 0
+# ✨ Milestone 0
 
 | Project        | 
 |------------------|
